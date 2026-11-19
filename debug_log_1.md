@@ -237,3 +237,14 @@ eadme.md
 - **模块**：仓库根目录、`.gitignore`
 - **变更**：本地仓库重命名为 `main` 分支；新增 `.gitignore`，排除 `.trae-html-share-packages/`、`.screenshots/.tmp/`、`node_modules/`、`__pycache__/`、`*.log` 等临时产物；通过 GitHub API 新建公开仓库 `archilau0315/Honeybee_Tutorial`，首次提交 1835 个文件（约 17 MB）并推送至 `origin/main`。
 - **备注**：远程使用 SSH 地址 `git@github.com:archilau0315/Honeybee_Tutorial.git`；此前临时推送到 `resources` 仓库的记录不再作为本项目的发布地址。
+
+### 21. 侧栏社交图标改为仓库入口 + 顶部返回主页按钮
+
+- **模块**：`site/index.html`、`site/style.css`、`site/i18n.js`
+- **变更**：
+  - 侧栏左下角原 `GH` / `KB` 文字方块替换为 Simple Icons 官方路径的内联 SVG 图标，分别直达 `github.com/archilau0315/Honeybee_Tutorial` 与 `gitee.com/archilau/Honeybee_Tutorial`；按钮 28×28、图标 16×16，颜色随主题、悬停变白底橙色。
+  - 顶部栏语言切换右侧新增 `返回主页` 按钮（房子图标 + 文案），指向主站 `https://www.kbitai.com.cn/`；≤820px 自动折叠为纯图标。
+  - i18n 新增 `backHome` / `repoGh` / `repoGitee` 三组中英文案，随语言切换更新按钮文字与悬停提示。
+  - `style.css` / `i18n.js` 引用版本号升级为 `?v=20261119a`，避免浏览器缓存旧样式。
+- **验证**：本地 8899 端口起站实测：图标清晰、无裁切；1440px 与 800px 两种宽度下顶部栏无重叠，窄屏正确折叠为图标；中英切换文案正常。
+- **备注**：返回主页按主站根地址处理；若需改为资源列表页，只改该 `a` 的 `href` 一处即可。
