@@ -229,3 +229,11 @@ eadme.md
 - **校验**：本地 `python -m http.server` 起站，浏览器实看 01 章（中/英切换）与附录 A，视频块渲染正确、点击直达 B 站；脚本校验 52 个文件每文件恰好 1 个视频块且均位于文件上半部。
 - **备注**：`doc/zh/a-terms.md`、`doc/en/a-terms.md` 因正文以大表格开头（无前置 h2），首次插入时视频块落到文末，已单独修正到表格之前。
 - **推送**：2026-11-19 已推送到 GitHub 新建公开仓库 git@github.com:archilau0315/resources.git（master 分支，本地与远端 HEAD 均为 19a4a64）。Gitee 因 SSH 公钥未添加暂未推送。
+
+## 2026-11-19
+
+### 20. 建立独立 GitHub 仓库并推送
+
+- **模块**：仓库根目录、`.gitignore`
+- **变更**：本地仓库重命名为 `main` 分支；新增 `.gitignore`，排除 `.trae-html-share-packages/`、`.screenshots/.tmp/`、`node_modules/`、`__pycache__/`、`*.log` 等临时产物；通过 GitHub API 新建公开仓库 `archilau0315/Honeybee_Tutorial`，首次提交 1835 个文件（约 17 MB）并推送至 `origin/main`。
+- **备注**：远程使用 SSH 地址 `git@github.com:archilau0315/Honeybee_Tutorial.git`；此前临时推送到 `resources` 仓库的记录不再作为本项目的发布地址。
