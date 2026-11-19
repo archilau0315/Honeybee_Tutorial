@@ -248,3 +248,5 @@ eadme.md
   - `style.css` / `i18n.js` 引用版本号升级为 `?v=20261119a`，避免浏览器缓存旧样式。
 - **验证**：本地 8899 端口起站实测：图标清晰、无裁切；1440px 与 800px 两种宽度下顶部栏无重叠，窄屏正确折叠为图标；中英切换文案正常。
 - **备注**：返回主页按主站根地址处理；若需改为资源列表页，只改该 `a` 的 `href` 一处即可。
+
+**部署**：2026-11-19 09:28 已将 `site/index.html`、`site/style.css`、`site/i18n.js` 同步到 `root@47.93.210.248:/www/wwwroot/kbitai.com.cn/resources/AC_Tutorial/honeybee/site/`，原文件各留 `*.bak-20261119` 备份并 `chown www:www`。线上校验：教程页 200，含 `home-btn` 与 GitHub/Gitee 仓库链接；`style.css?v=20261119a`、`i18n.js?v=20261119a` 均 200。
