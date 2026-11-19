@@ -250,3 +250,10 @@ eadme.md
 - **备注**：返回主页按主站根地址处理；若需改为资源列表页，只改该 `a` 的 `href` 一处即可。
 
 **部署**：2026-11-19 09:28 已将 `site/index.html`、`site/style.css`、`site/i18n.js` 同步到 `root@47.93.210.248:/www/wwwroot/kbitai.com.cn/resources/AC_Tutorial/honeybee/site/`，原文件各留 `*.bak-20261119` 备份并 `chown www:www`。线上校验：教程页 200，含 `home-btn` 与 GitHub/Gitee 仓库链接；`style.css?v=20261119a`、`i18n.js?v=20261119a` 均 200。
+
+### 22. 重写 readme（GitHub 风格双语）
+
+- **模块**：`readme.md`
+- **变更**：整体重写为 GitHub 风格：顶部居中站标 + 标题 + 7 枚 shields 徽章 + 快捷导航；新增封面图与教程配图、中英对照的「定位表」、功能特性表、快速开始（克隆 / 本地服务 / 快捷键）、技术栈、组件矩阵（可折叠数据体量表）、按 6 个部分 + 附录折叠的完整教程目录（带 doc 直链）、目录树、流水线示意与脚本清单、图标与双语实现说明、维护约定（中英各 5 条）、FAQ、相关链接、许可与致谢。
+- **勘误**：教程实际为 22 篇正文 + 4 篇附录 = 26 篇文档（旧稿写作「26 篇 + 4 附录」），已按 `data/chapters.json` 与 `doc/zh` 文件清单更正；「每章配 B 站视频」改为「相关章节内附」，与 doc 实际 5 处视频链接一致。
+- **备注**：引用文件（`cover.svg`、`assets/brand/honeybee.png`、`assets/shots/*.png`、`doc/zh|en/*.md`）已逐一核对存在。
