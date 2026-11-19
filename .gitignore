@@ -1,0 +1,11 @@
+# 临时与缓存文件 Temporary & cache files
+.trae-html-share-packages/
+.screenshots/.tmp/
+*.tmp
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# 本地日志 Local logs
+*.log
